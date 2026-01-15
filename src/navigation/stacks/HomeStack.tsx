@@ -1,17 +1,18 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from '../../screens/Home/HomeScreen';
-import ChatbotScreen from '../../screens/Chatbot/ChatbotScreen';
-import ContentLibrayScreen from '../../screens/Content_Library/ContentLibrayScreen';
-import LessonScreen from '../../screens/Lessons/LessonScreen';
-import LessonDetails from '../../screens/Lesson_Details/LessonDetails';
-import Assessments from '../../screens/Assessments/Assessments';
-import AssessmentComplete from '../../screens/Assessments/AssessmentComplete';
-import AnalyticsScreen from '../../screens/Analytics/AnalyticsScreen';
-import AssessmentResult from '../../screens/Assessments/AssessmentResult';
-import VideoLayout from '../../screens/Video/VideoLayout';
-import ContentDetailScreen from '../../screens/Content_Library/ContentDetailScreen';
+import HomeScreen from '../../modules/home/screens/HomeScreen';
+import ChatbotScreen from '../../modules/chatbot/screens/ChatbotScreen';
+import ContentDetailScreen from '../../modules/content-library/screens/ContentDetailScreen';
+import LessonScreen from '../../modules/lessons/screens/LessonScreen';
+import LessonDetails from '../../modules/lessons/screens/LessonDetails';
+import AssessmentComplete from '../../modules/lessons/screens/AssessmentComplete';
+import Assessments from '../../modules/lessons/screens/Assessments';
+import AssessmentResult from '../../modules/lessons/screens/AssessmentResult';
+import VideoLayout from '../../modules/lessons/screens/VideoLayout';
+import AnalyticsScreen from '../../modules/analytics/screens/AnalyticsScreen';
+import ContentLibraryScreen from '../../modules/content-library/screens/ContentLibraryScreen';
+import PdfViewerScreen from '../../modules/content-library/screens/PdfViewerScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -38,7 +39,8 @@ export default function HomeStack() {
         }}
       />
       <Stack.Screen name="Chatbot" component={ChatbotScreen} />
-      <Stack.Screen name="ContentLibrary" component={ContentLibrayScreen} />
+      <Stack.Screen name="ContentLibrary" component={ContentLibraryScreen} />
+      <Stack.Screen name='PdfViewer' component={PdfViewerScreen}/>
       <Stack.Screen name="LessonScreen" component={LessonScreen} />
       <Stack.Screen name="LessonDetails" component={LessonDetails} />
       <Stack.Screen name="Assessments" component={Assessments} />
