@@ -1,6 +1,6 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HelpSupportScreen from "../../screens/Help_Support/HelpSupportScreen";
+import HelpSupportScreen from "../../modules/support/screens/HelpSupportScreen";
 
 const Stack = createNativeStackNavigator();
 
