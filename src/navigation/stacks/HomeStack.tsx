@@ -3,7 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from '../../modules/home/screens/HomeScreen';
 import ChatbotScreen from '../../modules/chatbot/screens/ChatbotScreen';
-import ContentDetailScreen from '../../modules/content-library/screens/ContentDetailScreen';
 import LessonScreen from '../../modules/lessons/screens/LessonScreen';
 import LessonDetails from '../../modules/lessons/screens/LessonDetails';
 import AssessmentComplete from '../../modules/lessons/screens/AssessmentComplete';
@@ -13,6 +12,7 @@ import VideoLayout from '../../modules/lessons/screens/VideoLayout';
 import AnalyticsScreen from '../../modules/analytics/screens/AnalyticsScreen';
 import ContentLibraryScreen from '../../modules/content-library/screens/ContentLibraryScreen';
 import PdfViewerScreen from '../../modules/content-library/screens/PdfViewerScreen';
+import ContentSectionScreen from '../../modules/content-library/screens/ContentSectionScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -48,7 +48,7 @@ export default function HomeStack() {
       <Stack.Screen name='AssessmentResult' component={AssessmentResult}/>
       <Stack.Screen name="Analytics" component={AnalyticsScreen} />
       <Stack.Screen name='Video' component={VideoLayout}/>
-      <Stack.Screen name='ContentDetailScreen' component={ContentDetailScreen}/>
+      <Stack.Screen name='ContentSection' component={ContentSectionScreen}/>
     </Stack.Navigator>
   );
 }
