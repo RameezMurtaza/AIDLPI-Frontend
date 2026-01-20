@@ -1,13 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, Dimensions, TouchableOpacity } from 'react-native';
-import Picture from '../../../assets/images/HomeScreen/1.png'
 
 const { width, height } = Dimensions.get('window');
 
 const HomeScreen = ({ navigation }: any) => {
   const items = [
     { src: require('../../../assets/images/HomeScreen/1.png'), screen: 'Chatbot' },
-    { src: require('../../../assets/images/HomeScreen/2.png'), screen: 'ContentLibrary' },
+    { src: require('../../../assets/images/HomeScreen/2.png'), screen: 'ContentSection' },
     { src: require('../../../assets/images/HomeScreen/3.png'), screen: 'LessonScreen' },
     { src: require('../../../assets/images/HomeScreen/4.png'), screen: 'Analytics' },
   ];
